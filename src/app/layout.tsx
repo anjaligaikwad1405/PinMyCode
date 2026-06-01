@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PinMyCode",
+  title: "PinMyCode — India's Postal Code Finder",
   description:
-    "Detect your current location and prepare for address and pincode lookup.",
+    "Search any Indian place, office, or district to find accurate PIN codes. Use reverse PIN lookup, GPS-based detection, or address-to-PIN conversion.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col bg-white">{children}</body>
     </html>
   );
 }

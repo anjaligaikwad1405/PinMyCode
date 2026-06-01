@@ -1,8 +1,15 @@
-export function LoadingState() {
+type LoadingStateProps = {
+  message: string;
+};
+
+export function LoadingState({ message }: LoadingStateProps) {
   return (
-    <div className="flex w-full items-center gap-3 rounded-lg border border-blue-100 bg-blue-50 p-4 text-blue-950">
-      <div className="h-4 w-4 animate-spin rounded-full border-2 border-blue-200 border-t-blue-700" />
-      <p className="text-sm font-medium">Detecting location...</p>
+    <div className="mt-4 flex items-center gap-2.5 rounded-lg border border-slate-200 bg-white p-3.5 text-sm text-slate-500">
+      <span className="relative flex h-3 w-3">
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-slate-400/40" />
+        <span className="relative inline-flex h-3 w-3 rounded-full bg-slate-500" />
+      </span>
+      {message}
     </div>
   );
 }

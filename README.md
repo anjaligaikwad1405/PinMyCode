@@ -1,9 +1,10 @@
 # PinMyCode
 
-PinMyCode is an open-source web app for detecting a user's current location in
-the browser. The first milestone requests location permission and displays the
-retrieved latitude and longitude. Reverse geocoding for postal address and
-pincode lookup will be added later.
+PinMyCode is an open-source web app for detecting a user's current postal
+address and PIN code from their browser location. It uses the browser
+Geolocation API for coordinates and OpenStreetMap Nominatim for reverse
+geocoding, then verifies the detected PIN code against a separate postal data
+source.
 
 ## Tech Stack
 
@@ -11,6 +12,8 @@ pincode lookup will be added later.
 - TypeScript
 - Tailwind CSS
 - Browser Geolocation API
+- OpenStreetMap Nominatim Reverse Geocoding
+- Postal PIN Code API for server-side verification
 
 ## Getting Started
 
@@ -42,9 +45,10 @@ src/
 
 ## Current Behavior
 
-- Click **Detect My Address**
+- Click **Detect My Location**
 - Grant browser location permission
-- View latitude and longitude in a styled card
+- View the detected postal address and verified PIN code in a styled card
+- See a warning when reverse geocoding and postal data disagree
 
 No backend, database, authentication, or paid services are used.
 
