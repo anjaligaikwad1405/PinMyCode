@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PinMyCode — India's Postal Code Finder",
+  title: "PinMyCode",
   description:
     "Search any Indian place, office, or district to find accurate PIN codes. Use reverse PIN lookup, GPS-based detection, or address-to-PIN conversion.",
 };
