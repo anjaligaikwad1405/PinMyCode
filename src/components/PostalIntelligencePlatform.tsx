@@ -429,10 +429,7 @@ export function PostalIntelligencePlatform() {
       <footer className="border-t border-slate-100">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <div className="flex items-center gap-2">
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" className="text-slate-400">
-              <rect x="3" y="3" width="14" height="14" rx="3" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M7 10l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+           
             <span className="font-medium text-slate-900">PinMyCode</span>
           </div>
           <div className="flex gap-5">

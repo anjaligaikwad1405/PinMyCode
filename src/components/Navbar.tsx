@@ -19,10 +19,7 @@ export function Navbar() {
           className="flex items-center gap-2 text-base font-semibold tracking-tight text-slate-900"
           href="#top"
         >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-slate-900">
-            <rect x="3" y="3" width="14" height="14" rx="3" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M7 10l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+        
           PinMyCode
         </a>
 
